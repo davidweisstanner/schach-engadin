@@ -3,6 +3,17 @@
 
 @import "minima";
 
+/* Kein Abstand zwischen Header und Coverbild auf der Startseite */
+body:has(.hero) .page-content {
+  padding-top: 0;
+}
+
+body:has(.hero) .page-content > .wrapper {
+  max-width: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
 /* =========================================================
    HEADER
    ========================================================= */
