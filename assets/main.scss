@@ -1,0 +1,45 @@
+---
+---
+
+@import "minima";
+
+/* Dark header */
+.site-header {
+  background-color: #17324d;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+/* Site title */
+.site-title,
+.site-title:visited,
+.site-title:hover {
+  color: #ffffff;
+}
+
+/* Navigation links */
+.site-nav .page-link,
+.site-nav .page-link:visited {
+  color: #ffffff;
+}
+
+.site-nav .page-link:hover {
+  color: #dbe7f0;
+}
+
+/* Mobile navigation */
+@media screen and (max-width: 600px) {
+  .site-nav {
+    background-color: #17324d;
+    border-color: #ffffff;
+  }
+
+  .site-nav .menu-icon > svg path {
+    fill: #ffffff;
+  }
+
+  .site-nav .page-link,
+  .site-nav .page-link:visited {
+    color: #ffffff;
+  }
+}
