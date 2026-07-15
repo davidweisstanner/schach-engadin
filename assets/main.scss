@@ -1,4 +1,40 @@
-/* Full-width homepage cover */
+---
+---
+
+@import "minima";
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.site-header {
+  background-color: #17324d;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.site-title,
+.site-title:visited,
+.site-title:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.site-nav .page-link,
+.site-nav .page-link:visited {
+  color: #ffffff;
+}
+
+.site-nav .page-link:hover {
+  color: #dbe7f0;
+  text-decoration: none;
+}
+
+
+/* =========================================================
+   HOMEPAGE HERO
+   ========================================================= */
+
 .hero {
   position: relative;
   width: 100vw;
@@ -6,48 +42,46 @@
   margin-left: calc(50% - 50vw);
   display: flex;
   align-items: center;
-  justify-content: center;
   overflow: hidden;
   color: #ffffff;
-}
 
-.hero__background {
-  position: absolute;
-  inset: 0;
-  background:
+  background-image:
     linear-gradient(
       90deg,
       rgba(10, 25, 39, 0.82) 0%,
       rgba(10, 25, 39, 0.62) 55%,
       rgba(10, 25, 39, 0.35) 100%
     ),
-    url("{{ '/assets/images/hero.jpg' | relative_url }}") center center / cover no-repeat;
+    url("images/cover_figuren.JPG");
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero__content {
   position: relative;
-  z-index: 1;
   width: 100%;
   max-width: 1100px;
+  margin: 0 auto;
   padding: 80px 30px;
   box-sizing: border-box;
 }
 
 .hero__content h1 {
-  max-width: 780px;
+  max-width: 800px;
   margin: 0 0 20px;
   color: #ffffff;
-  font-size: clamp(2.4rem, 5vw, 4.3rem);
+  font-size: 4rem;
   line-height: 1.08;
   font-weight: 700;
-  letter-spacing: -0.025em;
 }
 
 .hero__content p {
   max-width: 760px;
   margin: 0 0 36px;
   color: #ffffff;
-  font-size: clamp(1.15rem, 2.2vw, 1.55rem);
+  font-size: 1.45rem;
   line-height: 1.5;
 }
 
@@ -59,89 +93,92 @@
 
 .hero-button,
 .hero-button:visited {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 46px;
-  padding: 9px 18px;
-  border: 1px solid rgba(255, 255, 255, 0.85);
+  display: inline-block;
+  padding: 12px 18px;
+  border: 1px solid #ffffff;
   border-radius: 4px;
   color: #ffffff;
-  background: rgba(10, 25, 39, 0.35);
+  background-color: rgba(10, 25, 39, 0.4);
   font-weight: 600;
   text-decoration: none;
-  box-sizing: border-box;
-  transition:
-    background-color 0.18s ease,
-    color 0.18s ease,
-    border-color 0.18s ease;
 }
 
 .hero-button:hover {
   color: #17324d;
-  background: #ffffff;
-  border-color: #ffffff;
+  background-color: #ffffff;
   text-decoration: none;
 }
 
 .hero-button--primary,
 .hero-button--primary:visited {
   color: #17324d;
-  background: #ffffff;
-  border-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .hero-button--primary:hover {
   color: #ffffff;
-  background: #17324d;
-  border-color: #17324d;
+  background-color: #17324d;
 }
 
 .home-introduction {
   max-width: 780px;
   margin: 0 auto;
-  padding: 64px 0 40px;
+  padding: 60px 0 40px;
 }
 
-.home-introduction h2 {
-  margin-top: 0;
-}
 
-/* Remove Minima's normal upper padding on the homepage */
-.page-content:has(.hero) {
-  padding-top: 0;
-}
+/* =========================================================
+   MOBILE
+   ========================================================= */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
+
+  .site-nav {
+    background-color: #17324d;
+    border-color: #ffffff;
+  }
+
+  .site-nav .menu-icon > svg path {
+    fill: #ffffff;
+  }
+
+  .site-nav .page-link,
+  .site-nav .page-link:visited {
+    color: #ffffff;
+  }
+
   .hero {
     min-height: 620px;
     align-items: flex-end;
-  }
 
-  .hero__background {
-    background:
+    background-image:
       linear-gradient(
         180deg,
-        rgba(10, 25, 39, 0.35) 0%,
-        rgba(10, 25, 39, 0.88) 75%
+        rgba(10, 25, 39, 0.25) 0%,
+        rgba(10, 25, 39, 0.9) 75%
       ),
-      url("{{ '/assets/images/hero.jpg' | relative_url }}") center center / cover no-repeat;
+      url("images/cover_figuren.JPG");
   }
 
   .hero__content {
-    padding: 60px 22px 48px;
+    padding: 60px 22px 45px;
+  }
+
+  .hero__content h1 {
+    font-size: 2.6rem;
+  }
+
+  .hero__content p {
+    font-size: 1.15rem;
   }
 
   .hero__buttons {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: block;
   }
 
   .hero-button {
-    width: 100%;
-  }
-
-  .home-introduction {
-    padding: 45px 0 25px;
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
   }
 }
