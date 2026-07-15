@@ -1,3 +1,8 @@
+---
+layout: default
+title: Home
+---
+
 <section class="hero">
   <div class="hero__content">
     <h1>Schach spielen im Engadin</h1>
