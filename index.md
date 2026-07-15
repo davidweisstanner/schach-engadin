@@ -9,4 +9,4 @@ Wir organisieren regelmässige Spielabende, Turniere und Mannschaftswettkämpfe 
 
 ## Nächste Veranstaltungen
 
-Die vollständigen Termine finden Sie in unserer Agenda [Spielprogramm](agenda.md).
+Die vollständigen Termine finden Sie in unserer [Agenda](agenda.md).
