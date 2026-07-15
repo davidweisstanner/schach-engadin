@@ -1,0 +1,10 @@
+title: Schachclub Engadin
+description: Schach spielen im Engadin
+
+theme: minima
+
+header_pages:
+  - index.md
+  - spielprogramm.md
+  - verein.md
+  - kontakt.md
