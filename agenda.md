@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Spielprogramm 2026
+title: Agenda
 ---
 
 ## Juni
