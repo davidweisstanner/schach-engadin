@@ -5,6 +5,8 @@ theme: minima
 
 header_pages:
   - index.md
-  - agenda.md
   - verein.md
+  - mitspielen.md
+  - agenda.md
+  - smm.md
   - kontakt.md
