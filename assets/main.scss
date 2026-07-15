@@ -1,45 +1,147 @@
----
----
-
-@import "minima";
-
-/* Dark header */
-.site-header {
-  background-color: #17324d;
-  border-top: 0;
-  border-bottom: 0;
-}
-
-/* Site title */
-.site-title,
-.site-title:visited,
-.site-title:hover {
+/* Full-width homepage cover */
+.hero {
+  position: relative;
+  width: 100vw;
+  min-height: 570px;
+  margin-left: calc(50% - 50vw);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
   color: #ffffff;
 }
 
-/* Navigation links */
-.site-nav .page-link,
-.site-nav .page-link:visited {
+.hero__background {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(10, 25, 39, 0.82) 0%,
+      rgba(10, 25, 39, 0.62) 55%,
+      rgba(10, 25, 39, 0.35) 100%
+    ),
+    url("{{ '/assets/images/hero.jpg' | relative_url }}") center center / cover no-repeat;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1100px;
+  padding: 80px 30px;
+  box-sizing: border-box;
+}
+
+.hero__content h1 {
+  max-width: 780px;
+  margin: 0 0 20px;
   color: #ffffff;
+  font-size: clamp(2.4rem, 5vw, 4.3rem);
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -0.025em;
 }
 
-.site-nav .page-link:hover {
-  color: #dbe7f0;
+.hero__content p {
+  max-width: 760px;
+  margin: 0 0 36px;
+  color: #ffffff;
+  font-size: clamp(1.15rem, 2.2vw, 1.55rem);
+  line-height: 1.5;
 }
 
-/* Mobile navigation */
-@media screen and (max-width: 600px) {
-  .site-nav {
-    background-color: #17324d;
-    border-color: #ffffff;
+.hero__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.hero-button,
+.hero-button:visited {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 9px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  border-radius: 4px;
+  color: #ffffff;
+  background: rgba(10, 25, 39, 0.35);
+  font-weight: 600;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition:
+    background-color 0.18s ease,
+    color 0.18s ease,
+    border-color 0.18s ease;
+}
+
+.hero-button:hover {
+  color: #17324d;
+  background: #ffffff;
+  border-color: #ffffff;
+  text-decoration: none;
+}
+
+.hero-button--primary,
+.hero-button--primary:visited {
+  color: #17324d;
+  background: #ffffff;
+  border-color: #ffffff;
+}
+
+.hero-button--primary:hover {
+  color: #ffffff;
+  background: #17324d;
+  border-color: #17324d;
+}
+
+.home-introduction {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 64px 0 40px;
+}
+
+.home-introduction h2 {
+  margin-top: 0;
+}
+
+/* Remove Minima's normal upper padding on the homepage */
+.page-content:has(.hero) {
+  padding-top: 0;
+}
+
+@media screen and (max-width: 700px) {
+  .hero {
+    min-height: 620px;
+    align-items: flex-end;
   }
 
-  .site-nav .menu-icon > svg path {
-    fill: #ffffff;
+  .hero__background {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(10, 25, 39, 0.35) 0%,
+        rgba(10, 25, 39, 0.88) 75%
+      ),
+      url("{{ '/assets/images/hero.jpg' | relative_url }}") center center / cover no-repeat;
   }
 
-  .site-nav .page-link,
-  .site-nav .page-link:visited {
-    color: #ffffff;
+  .hero__content {
+    padding: 60px 22px 48px;
+  }
+
+  .hero__buttons {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .hero-button {
+    width: 100%;
+  }
+
+  .home-introduction {
+    padding: 45px 0 25px;
   }
 }
