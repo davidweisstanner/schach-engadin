@@ -11,10 +11,10 @@ Interessierte, Gäste sowie neue Mitglieder sind jederzeit herzlich willkommen. 
 ## Mannschaftswettkampf
 Der Schachclub Engadin nimmt regelmässig an der Schweizerischen Mannschaftsmeisterschaft (SMM) teil und spielt aktuell in der 1. Liga. In seiner Geschichte konnte der Verein mehrere sportliche Erfolge feiern und spielte zeitweise sogar in der Nationalliga B, der zweithöchsten Spielklasse der Schweiz.
 
-Zum Aufstieg in die Nationalliga B im Jahr 2009 existiert ein Fernsehbeitrag von Radiotelevisiun Svizra Rumantscha: Video: Aufstieg in die NLB 2009
+Zum Aufstieg in die Nationalliga B im Jahr 2009 existiert ein Fernsehbeitrag von Radiotelevisiun Svizra Rumantscha: [Video: Aufstieg in die NLB 2009](https://www.rtr.ch/play/tv/-/video/-?urn=urn:rtr:video:d296df7f-2c92-4584-816a-2a922f805978){:target="_blank"}
 
 ## Turniere
-Seit 2007 organisiert der Schachclub Engadin jedes Jahr das Engadiner Pfingstopen.
+Seit 2007 organisiert der Schachclub Engadin jedes Jahr das [Engadiner Pfingstopen](https://pfingstopen.schach-engadin.ch/){:target="_blank"}.
 
 Zwischen 1994 und 2019 organisierte der Verein das Zuoz Open, das während 26 Austragungen zahlreiche Schachspielerinnen und Schachspieler aus dem In- und Ausland ins Engadin führte.
 
@@ -26,8 +26,8 @@ Junge Schachspielerinnen und Schachspieler können auf Anfrage an unserem betreu
 Darüber hinaus beteiligt sich der Schachclub Engadin gerne an Projektwochen, Schultagen und weiteren schulischen Angeboten. Wir stehen Schulen aller Stufen für Schachkurse, Workshops und andere Aktivitäten rund um das Schachspiel zur Verfügung. Bei Interesse freuen wir uns über eine Kontaktaufnahme (dweisstanner@gmail.com oder Tel. 079 373 64 57).
 
 ## Vorstand
-Präsident: David Weisstanner
-Kassier: Christoph Moggi
-Aktuar: Göri Klainguti
-Mannschaftsleiter: Andri Arquint
+- Präsident: David Weisstanner
+- Kassier: Christoph Moggi
+- Aktuar: Göri Klainguti
+- Mannschaftsleiter: Andri Arquint
 
