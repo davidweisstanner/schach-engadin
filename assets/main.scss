@@ -134,9 +134,30 @@ body:has(.hero) .page-content > .wrapper {
 
 @media screen and (max-width: 600px) {
 
+  /* Abstand oberhalb des Covers entfernen */
+  .page-content {
+    padding-top: 0;
+  }
+
+  /* Normale Unterseiten behalten ihren Abstand */
+  .page-content > .wrapper > .post {
+    padding-top: 30px;
+  }
+
+  /* Header und Menü immer über dem Coverbild */
+  .site-header {
+    position: relative;
+    z-index: 1000;
+  }
+
   .site-nav {
+    z-index: 1100;
     background-color: #17324d;
     border-color: #ffffff;
+  }
+
+  .site-nav .trigger {
+    background-color: #17324d;
   }
 
   .site-nav .menu-icon > svg path {
@@ -150,9 +171,9 @@ body:has(.hero) .page-content > .wrapper {
 
   .hero {
     width: 100vw;
-    min-height: calc(100vh - 55px);
+    min-height: calc(100svh - 55px);
     margin-left: calc(50% - 50vw);
-    margin-top: -30px;
+    margin-top: 0;
     align-items: flex-end;
 
     background-image:
@@ -170,7 +191,7 @@ body:has(.hero) .page-content > .wrapper {
   }
 
   .hero__content {
-    padding: 80px 22px 45px;
+    padding: 70px 22px 40px;
   }
 
   .hero__content h1 {
