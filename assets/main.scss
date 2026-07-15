@@ -305,4 +305,33 @@ body:has(.hero) .page-content > .wrapper {
     box-sizing: border-box;
     text-align: center;
   }
+
+    .news-section {
+    padding: 50px 0 56px;
+  }
+
+  .news-section__inner {
+    width: calc(100% - 32px);
+  }
+
+  .news-section__header {
+    margin-bottom: 24px;
+  }
+
+  .news-section__header h2 {
+    font-size: 1.9rem;
+  }
+
+  .news-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .news-card__image {
+    height: 220px;
+  }
+
+  .news-card__content {
+    padding: 22px 20px 24px;
+  }
 }
