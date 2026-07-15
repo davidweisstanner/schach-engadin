@@ -121,17 +121,6 @@ body:has(.hero) .page-content > .wrapper {
   text-decoration: none;
 }
 
-.hero-button--primary,
-.hero-button--primary:visited {
-  color: #17324d;
-  background-color: #ffffff;
-}
-
-.hero-button--primary:hover {
-  color: #ffffff;
-  background-color: #17324d;
-}
-
 .home-introduction {
   max-width: 780px;
   margin: 0 auto;
@@ -163,6 +152,7 @@ body:has(.hero) .page-content > .wrapper {
     width: 100vw;
     min-height: calc(100vh - 55px);
     margin-left: calc(50% - 50vw);
+    margin-top: -30px;
     align-items: flex-end;
 
     background-image:
